@@ -1,0 +1,13 @@
+steamreviews
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+nltk
+tqdm
+tensorflow
+streamlit
+gensim
+beautifulsoup4
+requests
