@@ -3,7 +3,6 @@ import pandas as pd
 from steamreviews import download_reviews_for_app_id
 from tqdm import tqdm
 
-# Daftar ID game di Steam yang mau di-scrape
 # RE Biohazard
 app_ids = [418370]
 
@@ -13,7 +12,7 @@ all_reviews = []
 for app_id in tqdm(app_ids):
     result, _ = download_reviews_for_app_id(
         app_id,
-        chosen_request_params={'language': 'english'}, # Bisa ganti ke 'indonesian' kalau mau
+        chosen_request_params={'language': 'english'}, 
         verbose=True
     )
     for review_id, review_data in result['reviews'].items():
